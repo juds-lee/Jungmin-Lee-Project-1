@@ -1,0 +1,31 @@
+header {
+    background-image: url(../assets/header-image.jpg);
+    position: relative;
+    img {
+        position: absolute;
+        top: 10em;
+        right: 0;
+        width: 50%;
+        height: 50%;
+    
+    }
+    h1 {
+    width: 42%;
+    margin-bottom: 0 ;
+    }
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    li {
+         list-style: none;
+         padding-top: 3em;
+    }
+    a {
+        color: white;
+          text-decoration: none;
+          margin-left: 2rem;  
+        }
+    justify-content: flex-end;
+}

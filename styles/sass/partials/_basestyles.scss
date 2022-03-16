@@ -1,5 +1,6 @@
 body {
-    max-width: 1400px;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 .wrapper{
     max-width: 1260px;
@@ -8,7 +9,6 @@ body {
 }
 img {
   width: 100%;
-  height: 100%;
 }
 button {
  font-family: 'Barlow', sans-serif;
@@ -18,6 +18,10 @@ button {
   line-height: 32px;
   background-color: #86E0F9;
   border: none;
+  margin-bottom: 2em;
+}
+a {
+  text-decoration: none; 
 }
 
 nav {
@@ -27,6 +31,17 @@ font-family: 'Barlow', sans-serif;
   letter-spacing: 1px;
 }
 
+
 $blue: #86E0F9;
 $green: #0f614E;
 $darkblue: #0c1423;
+
+.copyright {
+  background-color: $blue;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  p {
+    margin: 0;
+  }  
+}

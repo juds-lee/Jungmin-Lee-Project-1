@@ -1,6 +1,6 @@
 
 .learn-more {
-    height: 90vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,4 +11,58 @@
 }
 main {
      background-color: $darkblue;
+}
+.blog-section  {
+    background-color: $green;
+}
+.more-blog {
+    display: flex;
+    gap: 6em;
+    color: white;
+    position: relative;
+    .more-blog-img {
+    width: 50%;
+    position: relative;
+    .left-img {
+
+    }
+    }  
+    h4 {
+        margin: 2em 0 1em;
+    }
+    .more-blog-text {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    }
+    .bottom {
+        text-align: right;
+    }
+}
+.links-section {
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    padding-bottom: 4em;
+    .links {
+        margin: 4em 0 0;
+        width: 50%;
+       p {
+        width: 90%;}
+    }
+    a {
+        color: white;
+    }
+}
+.gallery {
+    background-color: $green;
+    padding: 2em 0 4em;
+
+    .img-gallery {
+        display: flex;
+        img {
+            width: 90%;
+        }
+
+    }
 }

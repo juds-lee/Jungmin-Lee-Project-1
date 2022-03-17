@@ -20,7 +20,6 @@ body {
 body {
   max-width: 1500px;
   margin: 0 auto;
-  background-color: #0c1423;
 }
 
 .wrapper {
@@ -283,14 +282,17 @@ i {
   height: 50vh;
 }
 
-.get-in-touch {
+.contact-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.get-in-touch .info {
+.contact-us .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,32 +303,37 @@ i {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-bottom: 10em;
 }
 
-.get-in-touch h4 {
+.contact-us h4 {
   color: white;
   margin: 1em 0;
 }
 
-.get-in-touch p {
+.contact-us p {
   margin: 0;
 }
 
-.get-in-touch i {
+.contact-us i {
   font-size: 1.4em;
-  margin: 1em .5em 1em 0;
+  margin-right: .5em;
 }
 
-.get-in-touch .contact-form {
+.contactForm {
+  height: 100%;
   width: 100%;
-}
-
-.get-in-touch .contact-us {
-  max-width: 1500px;
+  position: relative;
   background-color: #0f614E;
+  top: -150px;
+  right: -240px;
 }
 
-.get-in-touch .contact-us .email-name {
+.contactForm button {
+  width: 90%;
+}
+
+.contactForm .email-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,38 +342,68 @@ i {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 90%;
-  border: none;
   gap: 1em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
 }
 
-.get-in-touch .contact-us #name, .get-in-touch .contact-us #email {
+.contactForm #name, .contactForm #email {
   width: 100%;
+  border: none;
   line-height: 3em;
   border-bottom: 3px solid #86E0F9;
   margin: 3em auto;
 }
 
-.get-in-touch .contact-us input,
-.get-in-touch .contact-us textarea {
-  padding: 0 0 10px 5px;
+.contactForm .submit {
+  background-color: #0c1423;
+  color: white;
+}
+
+.contactForm input,
+.contactForm textarea {
   border: none;
+  margin-bottom: 40px;
   background-color: #0f614E;
-  border: none;
   color: white;
+  font-family: lato;
+  border: 3px solid #86E0F9;
 }
 
-.get-in-touch .contact-us textarea {
-  padding: 3em;
-  width: 80%;
-  height: 400px;
-  margin: 0 auto;
+.contactForm input::-webkit-input-placeholder,
+.contactForm textarea::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  opacity: 1;
   color: white;
-  border: 2px solid #86E0F9;
+  line-height: 1.2rem;
+  text-transform: uppercase;
 }
 
-.get-in-touch .contact-us button {
-  width: 90%;
+.contactForm input:-ms-input-placeholder,
+.contactForm textarea:-ms-input-placeholder {
+  font-size: 0.8rem;
+  opacity: 1;
+  color: white;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+
+.contactForm input::-ms-input-placeholder,
+.contactForm textarea::-ms-input-placeholder {
+  font-size: 0.8rem;
+  opacity: 1;
+  color: white;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  font-size: 0.8rem;
+  opacity: 1;
+  color: white;
+  line-height: 1.2rem;
+  text-transform: uppercase;
 }

@@ -3,13 +3,14 @@
     position: relative;
     height: 50vh;
 }
-.get-in-touch {
+.contact-us{
     display: flex;
-   gap: 5em;
+    flex-direction: row;
     .info {
          display: flex;
          flex-direction: column;
-         justify-content: flex-end
+         justify-content: flex-end;
+         padding-bottom: 10em;
     }
     h4 {
         color: white;
@@ -20,49 +21,59 @@
     }
     i {
         font-size: 1.4em;
-        margin: 1em .5em 1em 0;
+        margin-right: .5em;
     }
-    .contact-form {
-        width: 100%;
+}
+.contactForm { 
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: $green;
+    top: -150px;
+    right: -240px;
+    button {
+     width: 90%;
     }
-    .contact-us {
-        max-width: 1500px;
-        background-color: $green;
-         .email-name {
-        display: flex;
-        flex-direction: row;
-         width: 90%;
-        border: none;
-        gap: 1em;
-        justify-content: space-between;
-
-    }
-    #name, #email {
-        
-        width: 100%;
+    .email-name {
+     display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 1em;
+    justify-content: space-between;
+    margin: 0 auto;
+        }
+   
+  #name, #email {
+      width: 100%;
+     border: none;
        line-height: 3em;
        border-bottom: 3px solid $blue;
         margin: 3em auto;
     }
-    input,
-    textarea {
-    padding: 0 0 10px 5px;
-    border: none;
-    background-color: $green;
-          border: none;
-    color: white;
-}
- textarea {
-     padding: 3em;
-     width: 80%;
-     height: 400px;
-     margin: 0 auto;
-     color: white;
-     border: 2px solid $blue; 
- }
- button {
-     width: 90%;
- }
+    .submit {
+        background-color: $darkblue;
+        color: white;
     }
-   
+ input,
+textarea {
+  border: none;
+  margin-bottom: 40px;
+  background-color: $green;
+  color: white;
+  font-family: lato;
+  border: 3px solid $blue;
+  &::placeholder {
+    font-size: 0.8rem;
+    opacity: 1;
+    color: white;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+      }
+    }
 }
+
+
+
+ 
+
+    

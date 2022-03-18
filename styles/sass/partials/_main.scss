@@ -61,21 +61,27 @@ main {
 .links-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding-bottom: 4em;
     .links {
-        width: 50%;
+        width: 40%;
         margin: 4em 0 0;
-        justify-content: space-between;
+        h3 {
+            color: white;
+            margin-top: 0;
+        }
        p {
            width: 90%;
+           margin-left: 3em;
        }
     }
     a {
         color: white;
     }
-}
-.fa-location-arrow {
-    display: inline-block;
+    .links-header {
+        display: flex;
+        flex-direction: row;
+    }
 }
 .links-header {
     display: flex;
@@ -86,14 +92,18 @@ main {
     height: 52px;
     width: 52px;
     border-radius: 50%;
+    margin-right: 1em;
 }
 i{
     align-items: center;
     justify-content: center;
+    color: white;
+    margin: .2em 0 0 .1em;
+    font-size: 37px;
+
 }
 .fa-sticky-note {
-font-size: 0.7;
-margin-left: .2em;
+    margin-left: .3em;
 }
 .gallery {
     background-color: $green;

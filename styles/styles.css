@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -58,7 +58,6 @@ nav {
 .copyright {
   background-color: #86E0F9;
   padding: 0;
-  color: black;
   margin: 0;
   font-weight: 400;
   text-align: center;
@@ -66,6 +65,7 @@ nav {
 
 .copyright p {
   margin: 0;
+  color: black;
 }
 
 h1 {
@@ -86,6 +86,7 @@ h2 {
   font-weight: 700;
   font-size: 80px;
   line-height: 92px;
+  width: 100%;
   margin: 0;
   color: white;
 }
@@ -181,11 +182,25 @@ main {
   gap: 6em;
   color: white;
   position: relative;
+  padding-bottom: 1em;
 }
 
-.more-blog .more-blog-img {
+.more-blog .img-left {
+  width: 90%;
+  position: relative;
+  top: 1.6em;
+}
+
+.more-blog .img-left-position {
   width: 50%;
   position: relative;
+  top: -1.6em;
+}
+
+.more-blog .img-right-position {
+  width: 50%;
+  position: relative;
+  bottom: -1.6em;
 }
 
 .more-blog h4 {
@@ -204,6 +219,22 @@ main {
 
 .more-blog .bottom {
   text-align: right;
+}
+
+.more-blog .small-fish {
+  height: 80%;
+}
+
+.more-blog .this-month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .links-section {
@@ -278,15 +309,25 @@ i {
   width: 90%;
 }
 
+.right-shadow {
+  -webkit-box-shadow: 25px 25px #86E0F9;
+          box-shadow: 25px 25px #86E0F9;
+}
+
+.left-shadow {
+  -webkit-box-shadow: -25px 25px #86E0F9;
+          box-shadow: -25px 25px #86E0F9;
+}
+
 .contact-header {
   background-image: url(../assets/contact-header.jpg);
   position: relative;
   height: 60vh;
 }
 
-.contact-header h2 {
-  margin-left: 6.6em;
-  margin-top: em;
+h2 {
+  margin-top: 1em;
+  margin-left: 6.5em;
 }
 
 .contact-us {
@@ -332,6 +373,8 @@ i {
   width: 100%;
   position: relative;
   background-color: #0f614E;
+  bottom: 18em;
+  right: -15em;
 }
 
 .contactForm .positioning {
@@ -425,6 +468,26 @@ i {
   height: 60vh;
 }
 
+.blog-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-position h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 2em;
+}
+
 .two-col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,12 +497,16 @@ i {
           justify-content: space-between;
 }
 
-.two-col .left-img {
-  margin-top: 2em;
-  width: 110%;
+.two-col .blog-left-img {
+  margin-top: 3em;
   position: relative;
-  left: -2em;
-  vertical-align: top;
+  left: -7.5em;
+  top: .3em;
+}
+
+.two-col .blog-right-shadow {
+  -webkit-box-shadow: 26px 0px #0f614E;
+          box-shadow: 26px 0px #0f614E;
 }
 
 .two-col .col-left {
@@ -448,13 +515,13 @@ i {
 }
 
 .two-col .col-left .blog-text {
-  padding-left: 1em;
+  padding: 3em 0 0 1em;
   background-color: #0f614E;
+  width: 75%;
 }
 
 .two-col .col-left h4 {
   color: white;
-  padding-top: .5em;
   background-color: #0f614E;
 }
 
@@ -480,15 +547,40 @@ i {
       flex-basis: 60%;
 }
 
-.two-col .col-right .right-img {
+.two-col .col-right .blog-img-right {
   position: relative;
-  right: -4.2em;
-  top: -11em;
+  right: -1.4em;
+  top: -18em;
+}
+
+.two-col .col-right .blog-left-shadow {
+  -webkit-box-shadow: -27px 27px #86E0F9;
+          box-shadow: -27px 27px #86E0F9;
+  width: 113%;
+}
+
+.two-col .col-right .blog-post {
+  margin-top: -17em;
+}
+
+.two-col .col-right .blog-post p {
+  margin-left: 1.4em;
+}
+
+.two-col .col-right .blog-post p:nth-last-of-type(1) {
+  padding-bottom: 3em;
+  line-height: 1.5em;
+}
+
+.two-col .col-right .post-right-shadow {
+  -webkit-box-shadow: -5px 5px #86E0F9;
+          box-shadow: -5px 5px #86E0F9;
 }
 
 .two-col .col-right h3 {
   color: white;
-  margin-top: -3em;
+  margin: -3em 0 0 .6em;
+  padding-top: 1em;
 }
 
 .two-col .col-right .comments {
@@ -515,4 +607,8 @@ i {
 .two-col .col-right .email-name-blog {
   width: 100%;
   gap: 2em;
+}
+
+.leave-comment textarea {
+  width: 100%;
 }

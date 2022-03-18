@@ -20,13 +20,23 @@ main {
     gap: 6em;
     color: white;
     position: relative;
-    .more-blog-img {
-    width: 50%;
+    padding-bottom: 1em;
+    .img-left  {
+    width: 90%;
     position: relative;
-    .left-img {
+    top: 1.6em;
 
     }
-    }  
+    .img-left-position {
+    width: 50%;
+    position: relative;
+    top: -1.6em;
+    }
+    .img-right-position  {
+    width: 50%;
+    position: relative;
+    bottom: -1.6em;
+    }
     h4 {
         margin: 2em 0 1em;
     }
@@ -37,6 +47,15 @@ main {
     }
     .bottom {
         text-align: right;
+    }
+    .small-fish {
+        height: 80%;
+    }
+    .this-month {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 }
 .links-section {
@@ -85,4 +104,10 @@ margin-left: .2em;
             width: 90%;
         }
     }
+}
+.right-shadow {
+    box-shadow: 25px 25px $blue;
+}
+.left-shadow {
+    box-shadow: -25px 25px $blue;;
 }

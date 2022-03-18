@@ -1,5 +1,5 @@
 body {
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
 
 }
@@ -41,7 +41,9 @@ $darkblue: #0c1423;
 .copyright {
   background-color: $blue;
   padding: 0;
+  color: black;
   margin: 0;
+  font-weight: 400;
   text-align: center;
   p {
     margin: 0;

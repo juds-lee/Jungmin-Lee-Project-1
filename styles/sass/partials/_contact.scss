@@ -1,7 +1,11 @@
 .contact-header {
-    background-image: url(../../../assets/contact-header.jpg);
+    background-image: url(../assets/contact-header.jpg);
     position: relative;
-    height: 50vh;
+    height: 60vh;
+    h2 {
+        margin-left: 6.6em;
+        margin-top: em;
+    }
 }
 .contact-us{
     display: flex;
@@ -29,8 +33,11 @@
     width: 100%;
     position: relative;
     background-color: $green;
-    top: -150px;
+    
+    .positioning{
+    top: -250px;
     right: -240px;
+    }
     button {
      width: 90%;
     }
@@ -53,6 +60,8 @@
     .submit {
         background-color: $darkblue;
         color: white;
+
+        margin: inherit auto;
     }
  input,
 textarea {

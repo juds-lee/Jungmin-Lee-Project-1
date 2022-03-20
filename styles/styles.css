@@ -181,7 +181,6 @@ main {
   display: flex;
   gap: 6em;
   color: white;
-  position: relative;
   padding-bottom: 1em;
 }
 
@@ -208,17 +207,40 @@ main {
 }
 
 .more-blog .more-blog-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content: center;
   width: 50%;
+}
+
+.more-blog .more-blog-text p {
+  width: 90%;
+  padding-bottom: 1.5em;
 }
 
 .more-blog .bottom {
   text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.more-blog .top {
+  text-align: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .more-blog .small-fish {
@@ -625,4 +647,141 @@ h2 {
 
 .leave-comment textarea {
   width: 100%;
+}
+
+@media (max-width: 1300px) {
+  .more-blog .small-fish {
+    width: 100%;
+  }
+  .more-blog .this-months-text {
+    width: 200%;
+  }
+  .more-blog .this-month {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .more-blog .img-right-position {
+    width: 50%;
+    position: relative;
+    bottom: -5em;
+  }
+}
+
+@media (max-width: 1160px) {
+  .blog-section,
+  .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 0;
+    gap: 0;
+    width: 100%;
+  }
+  .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 0;
+    gap: 0;
+    width: 100%;
+  }
+  .more-blog-text {
+    padding-bottom: 0;
+    width: 200%;
+  }
+  .more-blog-text p {
+    width: 100%;
+  }
+  .more-blog .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .more-blog .top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .more-blog .img-left-position,
+  .more-blog .img-right-position {
+    width: 60%;
+    position: block;
+    top: 1em;
+  }
+  .more-blog .right-shadow {
+    -webkit-box-shadow: 0px 0px #86E0F9;
+            box-shadow: 0px 0px #86E0F9;
+    border: 1.4em solid #86E0F9;
+  }
+  .more-blog .left-shadow {
+    -webkit-box-shadow: 0px 0px #86E0F9;
+            box-shadow: 0px 0px #86E0F9;
+    border: 1.4em solid #86E0F9;
+  }
+}
+
+@media (max-width: 1030px) {
+  header {
+    background-image: url(../assets/header-image.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+  }
+  header img {
+    position: absolute;
+    top: 20em;
+    right: 0;
+    width: 60%;
+    height: 50%;
+  }
+  header h1 {
+    width: 120%;
+    margin-top: .5em;
+    padding-bottom: 3em;
+    font-size: 128px;
+  }
+  .more-blog .small-fish {
+    width: 110%;
+  }
+  .more-blog .this-months-text {
+    width: 110%;
+  }
 }

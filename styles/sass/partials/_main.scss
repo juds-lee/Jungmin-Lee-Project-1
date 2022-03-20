@@ -15,17 +15,16 @@ main {
 .blog-section  {
     background-color: $green;
 }
-.more-blog {
+.more-blog, 
+{
     display: flex;
     gap: 6em;
     color: white;
-    position: relative;
     padding-bottom: 1em;
     .img-left  {
     width: 90%;
     position: relative;
     top: 1.6em;
-
     }
     .img-left-position {
     width: 50%;
@@ -41,12 +40,25 @@ main {
         margin: 2em 0 1em;
     }
     .more-blog-text {
+         display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+        justify-content: center;
     width: 50%;
+        p{
+            width: 90%;
+            padding-bottom: 1.5em;
+        }
     }
     .bottom {
         text-align: right;
+        align-items: flex-end;
+        
+    }
+    .top {
+        text-align: left;
+        align-items: flex-start;
     }
     .small-fish {
         height: 80%;

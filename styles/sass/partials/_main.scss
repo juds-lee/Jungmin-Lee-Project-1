@@ -13,10 +13,12 @@ main {
      background-color: $darkblue;
 }
 .blog-section  {
+    display: flex;
+    flex-direction: column;
     background-color: $green;
 }
 .more-blog, 
-{
+{ 
     display: flex;
     gap: 6em;
     color: white;
@@ -52,11 +54,13 @@ main {
         }
     }
     .bottom {
+        display: flex;
         text-align: right;
         align-items: flex-end;
         
     }
     .top {
+        display: flex;
         text-align: left;
         align-items: flex-start;
     }

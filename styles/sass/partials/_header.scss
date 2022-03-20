@@ -1,20 +1,30 @@
 header {
     background-image: url(../assets/header-image.jpg);
     position: relative;
+    .header-img {
+        //  position: absolute;
+        // top: 14em;
+        // right: 0;
+        // height: 0%; 
+        // width: 60%;
+    }
     img {
-        position: absolute;
+         position: absolute;
         top: 14em;
         right: 0;
+        height: 80%; 
         width: 60%;
-        height: 90%;
     
     }
     h1 {
     width: 42%;
     margin-bottom: 0 ;
+    font-size: 138px;
     }
 }
-
+* {
+    border: 1px solid red;
+}
 ul {
     display: flex;
     margin: 0;

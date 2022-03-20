@@ -29,7 +29,8 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 button {
@@ -117,13 +118,18 @@ header img {
   position: absolute;
   top: 14em;
   right: 0;
+  height: 80%;
   width: 60%;
-  height: 90%;
 }
 
 header h1 {
   width: 42%;
   margin-bottom: 0;
+  font-size: 138px;
+}
+
+* {
+  border: 1px solid red;
 }
 
 ul {
@@ -172,6 +178,13 @@ main {
 }
 
 .blog-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #0f614E;
 }
 
@@ -230,6 +243,9 @@ main {
 }
 
 .more-blog .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: right;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -237,6 +253,9 @@ main {
 }
 
 .more-blog .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: left;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -649,7 +668,7 @@ h2 {
   width: 100%;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1330px) {
   .more-blog .small-fish {
     width: 100%;
   }
@@ -668,6 +687,9 @@ h2 {
     width: 50%;
     position: relative;
     bottom: -5em;
+  }
+  .links {
+    padding-top: 2em;
   }
 }
 
@@ -765,13 +787,6 @@ h2 {
     position: relative;
     background-repeat: no-repeat;
   }
-  header img {
-    position: absolute;
-    top: 20em;
-    right: 0;
-    width: 60%;
-    height: 50%;
-  }
   header h1 {
     width: 120%;
     margin-top: .5em;
@@ -783,5 +798,14 @@ h2 {
   }
   .more-blog .this-months-text {
     width: 110%;
+  }
+}
+
+@media (max-width: 1000px) {
+  header h1 {
+    width: 110%;
+    margin-top: .5em;
+    padding-bottom: 3em;
+    font-size: 100px;
   }
 }

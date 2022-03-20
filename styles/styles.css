@@ -434,7 +434,7 @@ h2 {
   position: relative;
   background-color: #0f614E;
   bottom: 11em;
-  right: -15em;
+  right: -10em;
   margin: 0 2em;
 }
 
@@ -479,6 +479,7 @@ h2 {
   margin-bottom: 1em;
   background-color: #0f614E;
   color: white;
+  width: 90%;
   font-family: lato;
   border: 3px solid #86E0F9;
 }
@@ -997,5 +998,80 @@ h2 {
   }
   .this-months-text h3 {
     padding-top: 1em;
+  }
+}
+
+@media (max-width: 1342px) {
+  .contactForm {
+    bottom: 11em;
+    right: -8em;
+    margin: 0 2em;
+  }
+}
+
+@media (max-width: 1240px) {
+  h2 {
+    margin-left: 4.4em;
+  }
+  h2 .contactForm {
+    bottom: 11em;
+    right: 10em;
+    margin: 0 2em;
+  }
+}
+
+@media (max-width: 1225px) {
+  .contact-header {
+    height: 40vh;
+  }
+  .left-shadow {
+    -webkit-box-shadow: 0px 0px #86E0F9;
+            box-shadow: 0px 0px #86E0F9;
+  }
+  h2 {
+    margin: 1em auto;
+    font-size: 80px;
+  }
+  .contactForm {
+    position: static;
+    margin: 1em auto 0;
+    background-color: #0f614E;
+  }
+  .contactForm .submit {
+    margin-bottom: 1em;
+  }
+  .contact-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2em 0;
+    margin-left: 3em;
+  }
+  .contact-us .info {
+    margin-top: 4em;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 1225px) {
+  h2 {
+    font-size: 60px;
+  }
+  .contact-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }

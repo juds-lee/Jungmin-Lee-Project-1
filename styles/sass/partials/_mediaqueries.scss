@@ -23,6 +23,7 @@
 @media(max-width: 1160px) {
     .blog-section, 
     .top, 
+    .bottom
      {
         display: flex;
         flex-direction: column;
@@ -35,11 +36,7 @@
     .bottom
     { display: flex;
         flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 0;
-        gap: 0;
-        width: 100%;
+
 
     }
     .more-blog-text {
@@ -50,16 +47,12 @@
          }
     }
     .more-blog {
-    .bottom{
+    .bottom,
+    .top {
     display: flex;
      flex-direction: column;
     align-items: center;
     text-align: center;
-    }
-    .top {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     }
     .img-left-position, 
     .img-right-position {
@@ -84,6 +77,11 @@ header {
     background-image: url(../assets/header-image.jpg);
     position: relative;
     background-repeat: no-repeat;
+    .header-img {
+        top: 20em;
+        right: 0;
+        width: 60%;
+    }
     h1 {
     width: 120%;
     margin-top: .5em;
@@ -99,15 +97,196 @@ header {
          width: 110%;
    }
 }
+.learn-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;;
+    text-align: center;
+    color: white;
+    width: 70%;
+    padding: 6em 0 0;
+    margin: 0 auto;
+    p {
+        margin: 0;
+        padding-top: 0;
+    }
+    h3 {
+        margin: 0 auto;
+        padding-top: 1em;
+        padding-bottom: 0;
+    }
+}
 }
 @media (max-width: 1000px){
      header {
-   
+    .header-img {
+        
+        top: 17em;
+        right: 0;
+        width: 55%;
+    }
     h1 {
-    width: 110%;
-    margin-top: .5em;
-    padding-bottom: 3em;
+    width: 120%;
     font-size: 100px;
+    }
+}
+}
+@media (max-width: 900px){
+    .more-blog{
+   .this-months-text {
+         width: 170%;
+   }
+}
+}
+@media (max-width: 800px){
+    header {
+     .header-img {
+        top: 17em;
+        right: 0;
+        width: 55%;
+    }
+    h1 {
+    width: 100%;
+    margin: 1em auto 0;
+    padding-bottom: 3em;
+    font-size: 80px;
+    }
+}
+     .links-section {
+        display: flex;
+        flex-direction: column;
+         justify-content: space-around;
+    .links {
+        margin: 0 auto;
+        width: 100%;
+    }
+    }
+    .this-month {
+        display: flex;
+        flex-direction: column;
+    }
+    .more-blog{
+    .this-months-text {
+     width: 90%;
+    margin: 0 auto;
+    text-align: center;
+   }
+    .img-left  {
+    width: 50%;
+    display: block;
+    margin: -1em auto;
+    }
+}
+}
+@media (max-width: 650px){
+     header {
+     .header-img {
+       visibility: hidden
+    }
+    h1 {
+    width: 100%;
+    margin: 1em auto 0;
+    padding-bottom: 2em;
+    font-size: 50px;
+}
+}
+ .learn-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items:flex-start;
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+    margin: 0 auto;
+    button {
+        margin: 1em auto;
+
+    }
+    h3 {
+        margin: 1em 0;
+        padding-top: 0;
+    }
+    p {
+        margin: 0;
+    }
+    }
+.more-blog{
+    .more-blog-text {
+        padding-bottom: 0;
+        width: 100%
+    }
+     p {
+         width:100%;
+         margin: 0 auto;
+         }
+}
+.img-gallery{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+ .more-blog{
+   .this-months-text {
+         width: 100%;
+         margin-top: -3em;
+         button {
+             margin-top: 1em;
+         }
+   }
+}
+ .links-header {
+     h3 {
+         font-size: 30px;
+         margin-bottom: 0;
+     }
+ }
+.links {
+    p {
+        padding-top: 0;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+.icon-circle {
+    height: 43px;
+    width: 43px;
+}
+i{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: .3em 0 0 .3em;
+    font-size: 25px;
+
+}
+}
+@media (max-width: 320px){
+     .more-blog {
+    .img-left-position, 
+    .img-right-position {
+       position: static;
+        margin: .5em auto 0;
+    }
+}
+    .links-section{
+    .links {
+        width: 100%;
+        p {
+        width: 90%;
+        margin: 0 auto;
+        }
+    }
+}
+.img-left {
+display: none!important;
+}
+.this-months-text {
+    h3 {
+        padding-top: 1em ;
     }
 }
 }

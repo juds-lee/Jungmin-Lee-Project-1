@@ -31,18 +31,19 @@
     }
 }
 .contactForm { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
     width: 100%;
     position: relative;
     background-color: $green;
     bottom: 11em;
     right: -15em;
+    margin: 0 2em;
     .positioning{
     top: -250px;
     right: -240px;
-    }
-    button {
-     width: 90%;
     }
     .email-name {
      display: flex;
@@ -61,15 +62,15 @@
         margin: 3em auto;
     }
     .submit {
+        width: 90%;
         background-color: $darkblue;
         color: white;
-
-        margin: inherit auto;
     }
+
  input,
 textarea {
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 1em;
   background-color: $green;
   color: white;
   font-family: lato;
@@ -79,6 +80,7 @@ textarea {
     opacity: 1;
     color: white;
     line-height: 1.2rem;
+    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
       }
     }

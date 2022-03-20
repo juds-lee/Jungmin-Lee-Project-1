@@ -30,7 +30,6 @@ body {
 
 img {
   max-width: 100%;
-  max-height: 100%;
 }
 
 button {
@@ -98,7 +97,7 @@ h3 {
   font-size: 42px;
   line-height: 52px;
   letter-spacing: 1px;
-  margin: 2em 0 0;
+  margin: 1em 0;
 }
 
 h4 {
@@ -114,22 +113,17 @@ header {
   position: relative;
 }
 
-header img {
+header .header-img {
   position: absolute;
   top: 14em;
   right: 0;
-  height: 80%;
-  width: 60%;
+  width: 55%;
 }
 
 header h1 {
   width: 42%;
   margin-bottom: 0;
   font-size: 138px;
-}
-
-* {
-  border: 1px solid red;
 }
 
 ul {
@@ -170,6 +164,7 @@ ul a {
           align-items: center;
   color: white;
   width: 70%;
+  padding: 10% 0;
   margin: 0 auto;
 }
 
@@ -424,21 +419,28 @@ h2 {
 }
 
 .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   width: 100%;
   position: relative;
   background-color: #0f614E;
   bottom: 11em;
   right: -15em;
+  margin: 0 2em;
 }
 
 .contactForm .positioning {
   top: -250px;
   right: -240px;
-}
-
-.contactForm button {
-  width: 90%;
 }
 
 .contactForm .email-name {
@@ -466,15 +468,15 @@ h2 {
 }
 
 .contactForm .submit {
+  width: 90%;
   background-color: #0c1423;
   color: white;
-  margin: inherit auto;
 }
 
 .contactForm input,
 .contactForm textarea {
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 1em;
   background-color: #0f614E;
   color: white;
   font-family: lato;
@@ -487,6 +489,7 @@ h2 {
   opacity: 1;
   color: white;
   line-height: 1.2rem;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
 }
 
@@ -496,6 +499,7 @@ h2 {
   opacity: 1;
   color: white;
   line-height: 1.2rem;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
 }
 
@@ -505,6 +509,7 @@ h2 {
   opacity: 1;
   color: white;
   line-height: 1.2rem;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
 }
 
@@ -514,6 +519,7 @@ h2 {
   opacity: 1;
   color: white;
   line-height: 1.2rem;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
 }
 
@@ -695,7 +701,8 @@ h2 {
 
 @media (max-width: 1160px) {
   .blog-section,
-  .top {
+  .top,
+  .bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -721,15 +728,6 @@ h2 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-bottom: 0;
-    gap: 0;
-    width: 100%;
   }
   .more-blog-text {
     padding-bottom: 0;
@@ -738,7 +736,8 @@ h2 {
   .more-blog-text p {
     width: 100%;
   }
-  .more-blog .bottom {
+  .more-blog .bottom,
+  .more-blog .top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -750,18 +749,6 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-  }
-  .more-blog .top {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .more-blog .img-left-position,
   .more-blog .img-right-position {
@@ -787,6 +774,11 @@ h2 {
     position: relative;
     background-repeat: no-repeat;
   }
+  header .header-img {
+    top: 20em;
+    right: 0;
+    width: 60%;
+  }
   header h1 {
     width: 120%;
     margin-top: .5em;
@@ -799,13 +791,211 @@ h2 {
   .more-blog .this-months-text {
     width: 110%;
   }
+  .learn-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: white;
+    width: 70%;
+    padding: 6em 0 0;
+    margin: 0 auto;
+  }
+  .learn-more p {
+    margin: 0;
+    padding-top: 0;
+  }
+  .learn-more h3 {
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 1000px) {
+  header .header-img {
+    top: 17em;
+    right: 0;
+    width: 55%;
+  }
   header h1 {
-    width: 110%;
-    margin-top: .5em;
-    padding-bottom: 3em;
+    width: 120%;
     font-size: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .more-blog .this-months-text {
+    width: 170%;
+  }
+}
+
+@media (max-width: 800px) {
+  header .header-img {
+    top: 17em;
+    right: 0;
+    width: 55%;
+  }
+  header h1 {
+    width: 100%;
+    margin: 1em auto 0;
+    padding-bottom: 3em;
+    font-size: 80px;
+  }
+  .links-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .links-section .links {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .this-month {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .more-blog .this-months-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .more-blog .img-left {
+    width: 50%;
+    display: block;
+    margin: -1em auto;
+  }
+}
+
+@media (max-width: 650px) {
+  header .header-img {
+    visibility: hidden;
+  }
+  header h1 {
+    width: 100%;
+    margin: 1em auto 0;
+    padding-bottom: 2em;
+    font-size: 50px;
+  }
+  .learn-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+    margin: 0 auto;
+  }
+  .learn-more button {
+    margin: 1em auto;
+  }
+  .learn-more h3 {
+    margin: 1em 0;
+    padding-top: 0;
+  }
+  .learn-more p {
+    margin: 0;
+  }
+  .more-blog .more-blog-text {
+    padding-bottom: 0;
+    width: 100%;
+  }
+  .more-blog p {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .img-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .more-blog .this-months-text {
+    width: 100%;
+    margin-top: -3em;
+  }
+  .more-blog .this-months-text button {
+    margin-top: 1em;
+  }
+  .links-header h3 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .links p {
+    padding-top: 0;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .icon-circle {
+    height: 43px;
+    width: 43px;
+  }
+  i {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    margin: .3em 0 0 .3em;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .more-blog .img-left-position,
+  .more-blog .img-right-position {
+    position: static;
+    margin: .5em auto 0;
+  }
+  .links-section .links {
+    width: 100%;
+  }
+  .links-section .links p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .img-left {
+    display: none !important;
+  }
+  .this-months-text h3 {
+    padding-top: 1em;
   }
 }

@@ -3,14 +3,11 @@
     position: relative;
     height: 60vh;
 }
-.blog-position {
-    display: flex;
-    h2 {
+.blog-head {
+    h2{
         display: flex;
-        flex-basis: 60%;
-        align-content: center;
-        justify-content: flex-end;
-        margin-top: 2em;
+        flex-direction: row;
+     justify-content: center;
     }
 }
 .two-col{
@@ -32,11 +29,15 @@
            padding: 3em 0 0 1em ;
              background-color: $green;
              width: 75%;
+             p {
+                 margin: .5em 0;
+             }
+
         }
-        
         h4 {
             color: white;
              background-color: $green;
+             padding: .3em;
         }
         ul {
             display: flex;
@@ -90,8 +91,15 @@
             width: 70%;
             margin-top: 2em;
         }
+        .blog-form {
+             position: relative;
+             bottom: 1em;
+             right: 2em;
+             width: 100%;
+        }
         .blog-form, #email, #name, #message {
             background-color: black;
+            width: 100%;
         }
         .submit {
             background-color: $green;

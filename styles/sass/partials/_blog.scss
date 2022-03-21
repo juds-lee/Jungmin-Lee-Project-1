@@ -5,9 +5,11 @@
 }
 .blog-head {
     h2{
-        display: flex;
-        flex-direction: row;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
      justify-content: center;
+     padding-top: 1.5em;
     }
 }
 .two-col{
@@ -98,12 +100,13 @@
              width: 100%;
         }
         .blog-form, #email, #name, #message {
-            background-color: black;
+            background-color: $darkblue;
             width: 100%;
         }
         .submit {
             background-color: $green;
             width: 100%;
+            margin-bottom: 0;
         }
          .email-name-blog {
 

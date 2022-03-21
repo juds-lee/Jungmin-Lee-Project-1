@@ -20,6 +20,13 @@
         padding-top: 2em;
     }
 }
+@media(max-width: 1225px){
+.blog-section, {
+.left-shadow {
+    box-shadow: -25px 25px $blue;
+}
+}
+}
 @media(max-width: 1160px) {
     .blog-section, 
     .top, 
@@ -57,16 +64,12 @@
     .img-left-position, 
     .img-right-position {
         width: 60%;
-        position: block;
+        display: block;
         top: 1em;
     }  
     .right-shadow {
-    box-shadow: 0px 0px $blue;
-    border: 1.4em solid $blue;;
-    }
-.left-shadow {
-    box-shadow: 0px 0px $blue;
-    border: 1.4em solid $blue;
+    box-shadow: 25px 25px $blue;
+    
     }
 }
 }
@@ -141,6 +144,7 @@ header {
 }
 @media (max-width: 800px){
     header {
+        background-size: cover;
      .header-img {
         top: 17em;
         right: 0;
@@ -186,10 +190,16 @@ header {
     }
     h1 {
     width: 100%;
-    margin: 1em auto 0;
-    padding-bottom: 2em;
+    padding-top: 2em;
     font-size: 50px;
+    margin: 0 auto;
 }
+    .menu-btn {
+    display: block;
+  }
+  nav {
+      display: none;
+  }
 }
  .learn-more {
     display: flex;
@@ -203,10 +213,9 @@ header {
     margin: 0 auto;
     button {
         margin: 1em auto;
-
     }
     h3 {
-        margin: 1em 0;
+        margin: 1em auto;
         padding-top: 0;
     }
     p {
@@ -276,8 +285,8 @@ i{
     .links {
         width: 100%;
         p {
-        width: 90%;
-        margin: 0 auto;
+        width: 80%;
+        margin-left: 4em; 
         }
     }
 }

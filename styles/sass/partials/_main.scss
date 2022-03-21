@@ -82,10 +82,11 @@ main {
     padding-bottom: 4em;
     .links {
         width: 40%;
-        margin: 4em 0 0;
+        margin: 5em 0 0;
         h3 {
             color: white;
             margin-top: 0;
+            margin-bottom: 0;
         }
        p {
            width: 90%;
@@ -106,16 +107,17 @@ main {
 }
 .icon-circle {
     background-color: $blue; 
-    height: 52px;
-    width: 52px;
-    border-radius: 50%;
+    height: 55px;
+    width: 55px;
     margin-right: 1em;
+    border-radius: 50%;
 }
 i{
+    display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    margin: .2em 0 0 .1em;
+    margin: .3em 0 0 .2em;
     font-size: 37px;
 
 }

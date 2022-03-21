@@ -13,6 +13,14 @@ header {
     margin-bottom: 0 ;
     font-size: 138px;
     }
+    .menu-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 3em;
+  top: 2em;
+ color: white;
+ display: none;
+}
 }
 
 ul {

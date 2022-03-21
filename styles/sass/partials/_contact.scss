@@ -3,10 +3,18 @@
     position: relative;
     height: 60vh;
 }
- .contact-head{
-        border: 1px solid red;
-     }
 
+.contact-head {
+    h2{
+    display: flex;
+    width: 87%;
+    flex-direction: row;
+     justify-content: center;
+     padding-top: 2.5em;
+     padding-left: 3em;
+    
+    }
+}
 .contact-us{
     display: flex;
     flex-direction: row;
@@ -51,8 +59,10 @@
     justify-content: space-between;
     margin: 0 auto;
         }
-   
-  #name, #email {
+   #name, #email {
+       border: none;
+   }
+  .form-name, .form-email {
       width: 100%;
      border: none;
        line-height: 3em;
@@ -73,7 +83,7 @@ textarea {
   color: white;
   width: 90%;
   font-family: lato;
-  border: 3px solid $blue;
+  border: 1px solid $blue;
   &::placeholder {
     font-size: 0.8rem;
     opacity: 1;

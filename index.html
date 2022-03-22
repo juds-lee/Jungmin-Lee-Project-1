@@ -19,7 +19,7 @@
                 <i class="fas fa-bars fa-2x"></i>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-menu show">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
@@ -192,6 +192,9 @@
     <div class="copyright">
         <p>Copyright © HackerYou 2022</p>
     </div>
+    <script>
+        document.querySelector('.menu-btn').addEventListener("click", () => document.querySelector(".nav-menu").classList.toggle("show"));
+    </script>
 </body>
 
 </html>

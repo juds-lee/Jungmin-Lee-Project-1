@@ -412,7 +412,7 @@ i {
 .contact-header {
   background-image: url(../assets/contact-header.jpg);
   position: relative;
-  height: 60vh;
+  height: 550px;
 }
 
 .contact-head h2 {
@@ -605,7 +605,7 @@ i {
 .blog-header {
   background-image: url(../assets/blog-header.jpg);
   position: relative;
-  height: 60vh;
+  height: 550px;
 }
 
 .blog-head h2 {
@@ -690,7 +690,7 @@ i {
 .two-col .col-right .blog-img-right {
   position: relative;
   right: -1.4em;
-  top: -18em;
+  top: -16em;
 }
 
 .two-col .col-right .blog-left-shadow {
@@ -1020,8 +1020,29 @@ i {
   header .menu-btn {
     display: block;
   }
-  header nav {
-    display: none;
+  header nav .nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #86e0f9;
+    width: 40%;
+    height: 100%;
+    opacity: 0.9;
+    padding: 0;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+    transition: -webkit-transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  }
+  header nav ul li {
+    padding: 1.3em;
+  }
+  header nav .show {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
   }
   .learn-more {
     display: -webkit-box;
@@ -1257,7 +1278,7 @@ i {
 
 @media (max-width: 900px) {
   .blog-header {
-    height: 30vh;
+    height: 40vh;
   }
   .two-col {
     display: -webkit-box;

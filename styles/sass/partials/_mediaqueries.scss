@@ -194,8 +194,25 @@
     .menu-btn {
       display: block;
     }
-    nav {
-      display: none;
+    nav .nav-menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $blue;
+      width: 40%;
+      height: 100%;
+      opacity: 0.9;
+      padding: 0;
+      transform: translateX(-500px);
+      transition: transform 0.8s ease-in-out;
+    }
+
+    nav ul li {
+      padding: 1.3em;
+    }
+    nav .show {
+      transform: translateX(-20px);
     }
   }
   .learn-more {

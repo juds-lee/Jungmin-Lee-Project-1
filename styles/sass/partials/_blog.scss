@@ -1,7 +1,7 @@
 .blog-header {
   background-image: url(../assets/blog-header.jpg);
   position: relative;
-  height: 60vh;
+  height: 550px;
 }
 .blog-head {
   h2 {
@@ -56,7 +56,7 @@
     .blog-img-right {
       position: relative;
       right: -1.4em;
-      top: -18em;
+      top: -16em;
     }
     .blog-left-shadow {
       box-shadow: -27px 27px $blue;

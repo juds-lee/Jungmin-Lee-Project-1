@@ -1,43 +1,43 @@
 header {
-    background-image: url(../assets/header-image.jpg);
-    position: relative;
-    .header-img {
-         position: absolute;
-        top: 14em;
-        right: 0;
-        width: 55%;
-    }
+  background-image: url(../assets/header-image.jpg);
+  position: relative;
+  .header-img {
+    position: absolute;
+    top: 14em;
+    right: 0;
+    width: 55%;
+  }
 
-    h1 {
+  h1 {
     width: 42%;
-    margin-bottom: 0 ;
+    margin-bottom: 0;
     font-size: 138px;
-    }
-    .menu-btn {
-  cursor: pointer;
-  position: absolute;
-  right: 3em;
-  top: 2em;
- color: white;
- display: none;
-}
+  }
+  .menu-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 3em;
+    top: 2em;
+    color: white;
+    display: none;
+  }
 }
 
 ul {
-    display: flex;
-    margin: 0;
-    li {
-         list-style: none;
-         padding-top: 3em;
-    }
-    a {
-        color: white;
-          text-decoration: none;
-          margin-left: 2rem;  
-          &:hover {
+  display: flex;
+  margin: 0;
+  li {
+    list-style: none;
+    padding-top: 3em;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    &:hover {
       color: $blue;
-        }
-        }
-  
-    justify-content: flex-end;
+    }
+  }
+
+  justify-content: flex-end;
 }

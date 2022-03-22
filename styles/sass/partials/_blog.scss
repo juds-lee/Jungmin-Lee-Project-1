@@ -98,6 +98,7 @@
              bottom: 1em;
              right: 2em;
              width: 100%;
+             margin-top: 2em ;
         }
         .blog-form, #email, #name, #message {
             background-color: $darkblue;
@@ -107,6 +108,12 @@
             background-color: $green;
             width: 100%;
             margin-bottom: 0;
+             cursor: pointer;
+             transition: 0.3s;
+              &:hover {
+        background-color: $blue;
+        color: white;
+        }
         }
          .email-name-blog {
 

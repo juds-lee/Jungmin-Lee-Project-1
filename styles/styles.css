@@ -20,6 +20,7 @@ body {
 body {
   max-width: 1500px;
   margin: 0 auto;
+  background-color: #0f614e;
 }
 
 .wrapper {
@@ -32,31 +33,20 @@ img {
   max-width: 100%;
 }
 
-button {
-  font-family: 'Barlow', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 32px;
-  background-color: #86E0F9;
-  border: none;
-  margin-bottom: 2em;
-}
-
 a {
   text-decoration: none;
   color: white;
 }
 
 nav {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 .copyright {
-  background-color: #86E0F9;
+  background-color: #86e0f9;
   padding: 0;
   margin: 0;
   font-weight: 400;
@@ -66,6 +56,31 @@ nav {
 .copyright p {
   margin: 0;
   color: black;
+}
+
+button {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.2em 0.5em;
+  line-height: 32px;
+  background-color: #86e0f9;
+  border: none;
+  margin-bottom: 2em;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0c1423;
+  color: white;
+}
+
+button:focus {
+  background-color: #0c1423;
+  color: white;
 }
 
 h1 {
@@ -156,6 +171,10 @@ ul a {
   margin-left: 2rem;
 }
 
+ul a:hover {
+  color: #86e0f9;
+}
+
 .learn-more {
   height: 70vh;
   display: -webkit-box;
@@ -189,7 +208,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #0f614E;
+  background-color: #0f614e;
 }
 
 .more-blog {
@@ -214,9 +233,9 @@ main {
 }
 
 .more-blog .img-right-position {
-  width: 50%;
   position: relative;
   bottom: -1.6em;
+  right: 0;
 }
 
 .more-blog h4 {
@@ -331,7 +350,7 @@ main {
 }
 
 .icon-circle {
-  background-color: #86E0F9;
+  background-color: #86e0f9;
   height: 55px;
   width: 55px;
   margin-right: 1em;
@@ -348,7 +367,7 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
+  color: #0c1423;
   margin: .3em 0 0 .2em;
   font-size: 37px;
 }
@@ -357,8 +376,16 @@ i {
   margin-left: .3em;
 }
 
+.fa-users {
+  margin-left: .1em;
+}
+
+.fa-phone {
+  margin-left: .2em;
+}
+
 .gallery {
-  background-color: #0f614E;
+  background-color: #0f614e;
   padding: 2em 0 4em;
 }
 
@@ -373,13 +400,13 @@ i {
 }
 
 .right-shadow {
-  -webkit-box-shadow: 25px 25px #86E0F9;
-          box-shadow: 25px 25px #86E0F9;
+  -webkit-box-shadow: 25px 25px #86e0f9;
+          box-shadow: 25px 25px #86e0f9;
 }
 
 .left-shadow {
-  -webkit-box-shadow: -25px 25px #86E0F9;
-          box-shadow: -25px 25px #86E0F9;
+  -webkit-box-shadow: -25px 25px #86e0f9;
+          box-shadow: -25px 25px #86e0f9;
 }
 
 .contact-header {
@@ -440,6 +467,15 @@ i {
 .contact-us i {
   font-size: 1.4em;
   margin-right: .5em;
+  cursor: pointer;
+}
+
+.contact-us i:hover {
+  color: #86e0f9;
+}
+
+.contact-us i:focus {
+  color: #86e0f9;
 }
 
 .contactForm {
@@ -456,7 +492,7 @@ i {
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: #0f614E;
+  background-color: #0f614e;
   bottom: 11em;
   right: -10em;
   margin: 0 2em;
@@ -491,7 +527,7 @@ i {
   width: 100%;
   border: none;
   line-height: 3em;
-  border-bottom: 3px solid #86E0F9;
+  border-bottom: 3px solid #86e0f9;
   margin: 3em auto;
 }
 
@@ -499,17 +535,28 @@ i {
   width: 90%;
   background-color: #0c1423;
   color: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contactForm .submit:hover {
+  background-color: #86e0f9;
+}
+
+.contactForm .submit:focus {
+  background-color: #86e0f9;
 }
 
 .contactForm input,
 .contactForm textarea {
   border: none;
   margin-bottom: 1em;
-  background-color: #0f614E;
+  background-color: #0f614e;
   color: white;
   width: 90%;
   font-family: lato;
-  border: 1px solid #86E0F9;
+  border: 1px solid #86e0f9;
 }
 
 .contactForm input::-webkit-input-placeholder,
@@ -590,8 +637,8 @@ i {
 }
 
 .two-col .blog-right-shadow {
-  -webkit-box-shadow: 26px 0px #0f614E;
-          box-shadow: 26px 0px #0f614E;
+  -webkit-box-shadow: 26px 0px #0f614e;
+          box-shadow: 26px 0px #0f614e;
 }
 
 .two-col .col-left {
@@ -601,7 +648,7 @@ i {
 
 .two-col .col-left .blog-text {
   padding: 3em 0 0 1em;
-  background-color: #0f614E;
+  background-color: #0f614e;
   width: 75%;
 }
 
@@ -611,7 +658,7 @@ i {
 
 .two-col .col-left h4 {
   color: white;
-  background-color: #0f614E;
+  background-color: #0f614e;
   padding: .3em;
 }
 
@@ -644,8 +691,8 @@ i {
 }
 
 .two-col .col-right .blog-left-shadow {
-  -webkit-box-shadow: -27px 27px #86E0F9;
-          box-shadow: -27px 27px #86E0F9;
+  -webkit-box-shadow: -27px 27px #86e0f9;
+          box-shadow: -27px 27px #86e0f9;
   width: 113%;
 }
 
@@ -663,8 +710,8 @@ i {
 }
 
 .two-col .col-right .post-right-shadow {
-  -webkit-box-shadow: -5px 5px #86E0F9;
-          box-shadow: -5px 5px #86E0F9;
+  -webkit-box-shadow: -5px 5px #86e0f9;
+          box-shadow: -5px 5px #86e0f9;
 }
 
 .two-col .col-right h3 {
@@ -690,6 +737,7 @@ i {
   bottom: 1em;
   right: 2em;
   width: 100%;
+  margin-top: 2em;
 }
 
 .two-col .col-right .blog-form, .two-col .col-right #email, .two-col .col-right #name, .two-col .col-right #message {
@@ -698,9 +746,17 @@ i {
 }
 
 .two-col .col-right .submit {
-  background-color: #0f614E;
+  background-color: #0f614e;
   width: 100%;
   margin-bottom: 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.two-col .col-right .submit:hover {
+  background-color: #86e0f9;
+  color: white;
 }
 
 .two-col .col-right .email-name-blog {
@@ -739,8 +795,8 @@ i {
 
 @media (max-width: 1225px) {
   .blog-section .left-shadow {
-    -webkit-box-shadow: -25px 25px #86E0F9;
-            box-shadow: -25px 25px #86E0F9;
+    -webkit-box-shadow: -25px 25px #86e0f9;
+            box-shadow: -25px 25px #86e0f9;
   }
 }
 
@@ -802,8 +858,8 @@ i {
     top: 1em;
   }
   .more-blog .right-shadow {
-    -webkit-box-shadow: 25px 25px #86E0F9;
-            box-shadow: 25px 25px #86E0F9;
+    -webkit-box-shadow: 25px 25px #86e0f9;
+            box-shadow: 25px 25px #86e0f9;
   }
 }
 
@@ -820,7 +876,7 @@ i {
   }
   header h1 {
     width: 120%;
-    margin-top: .5em;
+    margin-top: 0.5em;
     padding-bottom: 3em;
     font-size: 128px;
   }
@@ -1022,7 +1078,7 @@ i {
         -ms-flex-pack: center;
             justify-content: center;
     color: white;
-    margin: .3em 0 0 .3em;
+    margin: 0.3em 0 0 0.3em;
     font-size: 25px;
   }
 }
@@ -1031,7 +1087,7 @@ i {
   .more-blog .img-left-position,
   .more-blog .img-right-position {
     position: static;
-    margin: .5em auto 0;
+    margin: 0.5em auto 0;
   }
   .links-section .links {
     width: 100%;
@@ -1061,8 +1117,8 @@ i {
     height: 40vh;
   }
   .left-shadow {
-    -webkit-box-shadow: -25px 25px #86E0F9;
-            box-shadow: -25px 25px #86E0F9;
+    -webkit-box-shadow: -25px 25px #86e0f9;
+            box-shadow: -25px 25px #86e0f9;
   }
   .contact-head h2 {
     width: 100%;
@@ -1072,7 +1128,7 @@ i {
   .contactForm {
     position: static;
     margin: 1em auto 0;
-    background-color: #0f614E;
+    background-color: #0f614e;
   }
   .contactForm .submit {
     margin-bottom: 1em;
@@ -1117,8 +1173,8 @@ i {
     font-size: 50px;
   }
   .left-shadow {
-    -webkit-box-shadow: 0px 0px #86E0F9;
-            box-shadow: 0px 0px #86E0F9;
+    -webkit-box-shadow: 0px 0px #86e0f9;
+            box-shadow: 0px 0px #86e0f9;
   }
 }
 
@@ -1138,7 +1194,8 @@ i {
             flex-direction: column;
     gap: 0;
   }
-  .contact-form .form-name, .contact-form .form-email {
+  .contact-form .form-name,
+  .contact-form .form-email {
     margin: 1em 0;
   }
 }
@@ -1196,12 +1253,12 @@ i {
   }
   .two-col .col-left .blog-text {
     padding: 3em 0 0 1em;
-    background-color: #0f614E;
+    background-color: #0f614e;
     width: 90%;
     margin: 0 auto;
   }
   .two-col .col-left .blog-text p {
-    margin: .5em 0;
+    margin: 0.5em 0;
   }
   .two-col .col-left .blog-text h4 {
     padding: 0;
@@ -1214,8 +1271,8 @@ i {
     position: static;
   }
   .two-col .col-right .blog-left-shadow {
-    -webkit-box-shadow: 0px 0px #86E0F9;
-            box-shadow: 0px 0px #86E0F9;
+    -webkit-box-shadow: 0px 0px #86e0f9;
+            box-shadow: 0px 0px #86e0f9;
   }
   .two-col .col-right .post-right-shadow {
     margin-top: 10em;

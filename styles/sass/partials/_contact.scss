@@ -3,7 +3,6 @@
     position: relative;
     height: 60vh;
 }
-
 .contact-head {
     h2{
     display: flex;
@@ -34,6 +33,13 @@
     i {
         font-size: 1.4em;
         margin-right: .5em;
+         cursor: pointer;
+    &:hover {
+    color: $blue;
+    }
+    &:focus {
+    color: $blue;
+    }
     }
 }
 .contactForm { 
@@ -73,8 +79,18 @@
         width: 90%;
         background-color: $darkblue;
         color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    &:hover 
+    {
+        background-color: $blue;
     }
-
+    &:focus 
+    {
+        background-color: $blue;
+    }
+       
+    }
  input,
 textarea {
   border: none;

@@ -34,6 +34,10 @@ ul {
         color: white;
           text-decoration: none;
           margin-left: 2rem;  
+          &:hover {
+      color: $blue;
         }
+        }
+  
     justify-content: flex-end;
 }

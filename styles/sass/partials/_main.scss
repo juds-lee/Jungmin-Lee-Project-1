@@ -35,9 +35,9 @@ main {
     top: -1.6em;
     }
     .img-right-position  {
-    width: 50%;
     position: relative;
     bottom: -1.6em;
+    right: 0;
     }
     h4 {
         margin: 2em 0 1em;
@@ -116,13 +116,19 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: $darkblue;
     margin: .3em 0 0 .2em;
     font-size: 37px;
 
 }
 .fa-sticky-note {
     margin-left: .3em;
+}
+.fa-users {
+    margin-left: .1em;
+}
+.fa-phone {
+     margin-left: .2em;
 }
 .gallery {
     background-color: $green;

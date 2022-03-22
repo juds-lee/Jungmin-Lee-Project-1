@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/453ecd0b52.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Blog</title>
 </head>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,10 +31,10 @@
             </div>
             <nav class="blog-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
             <h2 class="blog-title">Blog</h2>
@@ -125,12 +125,16 @@
                     </div>
                 </div>
                 <div class="leave-comment">
-                    <form action="#" method="POST" class="contactForm blog-form" name="contactform">
-                        <div class="email-name-blog email-name">
-                            <label for="name" class="sr-only">Name</label>
-                            <input type="text" id="name" placeholder="Name">
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" id="email" placeholder="Email address">
+                    <form action="#" method="POST" class="contactForm contact-form blog-form" name="contactform">
+                        <div class="email-name">
+                            <div class="form-name">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-email">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" id="email" placeholder="Email address">
+                            </div>
                         </div>
                         <div class="msg-btn">
                             <label for="message" class="sr-only">Message</label>

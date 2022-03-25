@@ -717,13 +717,14 @@ i {
           box-shadow: -5px 5px #86e0f9;
 }
 
-.two-col .col-right h3 {
+.two-col .col-right h4 {
   color: white;
-  margin: -3em 0 0 0.6em;
+  margin: 1em 0 0 0.6em;
   padding-top: 1em;
 }
 
-.two-col .col-right .comments {
+.two-col .col-right .comments,
+.two-col .col-right .new-comments {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr;
@@ -1040,7 +1041,7 @@ i {
   header nav ul li {
     padding: 1.3em;
   }
-  header nav .show {
+  header nav .nav-menu.show {
     -webkit-transform: translateX(-20px);
             transform: translateX(-20px);
   }

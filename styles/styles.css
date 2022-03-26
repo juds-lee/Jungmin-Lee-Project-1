@@ -368,35 +368,110 @@ i {
       -ms-flex-pack: center;
           justify-content: center;
   color: #0c1423;
-  margin: .3em 0 0 .2em;
+  margin: 0.3em 0 0 0.2em;
   font-size: 37px;
 }
 
 .fa-sticky-note {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 
 .fa-users {
-  margin-left: .1em;
+  margin-left: 0.1em;
 }
 
 .fa-phone {
-  margin-left: .2em;
+  margin-left: 0.2em;
 }
 
 .gallery {
   background-color: #0f614e;
-  padding: 2em 0 4em;
+  padding: 2em 0 2em;
 }
 
-.gallery .img-gallery {
+.gallery .carousel-tracker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: -2em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 1em;
 }
 
-.gallery .img-gallery img {
-  width: 90%;
+.gallery .carousel-tracker i {
+  padding: 0 1vw;
+  font-size: 1.5em;
+}
+
+.gallery .carousel {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery .img-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.gallery .car-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2em;
+  width: 60vw;
+  height: 40vw;
+  max-width: 500px;
+  max-height: 300px;
+  position: absolute;
+  opacity: 0;
+  padding-top: 0;
+}
+
+.gallery .car-slide.active {
+  position: relative;
+  opacity: 1;
+}
+
+.gallery .car-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery .arrow {
+  display: inline-block;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+}
+
+.gallery .left-arrow {
+  left: 0;
+}
+
+.gallery .right-arrow {
+  right: 0;
 }
 
 .right-shadow {

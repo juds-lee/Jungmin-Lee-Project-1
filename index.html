@@ -178,15 +178,22 @@
         </div>
     </main>
     <main class="gallery">
-        <div class="wrapper">
-            <ul class="img-gallery">
-                <li><img src="./assets/gallery-image-1.jpg" alt="Small child against aquarium glass">
-                </li>
-                <li><img src="./assets/gallery-image-2.jpg" alt="People gathered around aquairum glass to see shark">
-                </li>
-                <li><img src="./assets/gallery-image-3.jpg" alt="Fish swimming in aquarium">
-                </li>
-            </ul>
+        <div class="wrapper carousel">
+            <button class="left-arrow arrow"><i class="fas fa-chevron-left"></i></button>
+            <button class="right-arrow arrow"><i class="fas fa-chevron-right"></i></button>
+                <ul class="img-car">   
+                    <li class="car-slide active"><img class="car-img"src="./assets/gallery-image-1.jpg" alt="Small child against aquarium glass">
+                    </li>
+                    <li class="car-slide"><img class="car-img"src="./assets/gallery-image-2.jpg" alt="People gathered around aquairum glass to see shark">
+                    </li>
+                    <li class="car-slide"><img class="car-img" src="./assets/gallery-image-3.jpg" alt="Fish swimming in aquarium">
+                    </li>
+                </ul>   
+            <div class="carousel-tracker">
+                <i class="fas fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+            </div>
         </div>
     </main>
     <footer>

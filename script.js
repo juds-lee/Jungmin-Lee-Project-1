@@ -2,7 +2,7 @@
   document.querySelector('.menu-btn').addEventListener("click", () => {
               document.querySelector(".nav-menu").classList.toggle("show");
               console.log(document.querySelector(".nav-menu"));
-        })
+        });
 
 // adding comments functionality
 
@@ -12,9 +12,11 @@
 // append comment to page
 
 const commentForm = document.querySelector("form");
-
+if (commentForm){
  commentForm.addEventListener('submit', function(event) {
-   event.preventDefault();
+   console.log(commentForm);
+ event.preventDefault();
+
   // get date
   const date = new Date()
 
@@ -26,15 +28,16 @@ const commentForm = document.querySelector("form");
   let year = date.getFullYear();
   let day = daysOfWeek[date.getDay()];
   let todayIs = `${day} ${month} ${dateNumber}, ${year}`;
-  console.log(todayIs);
-  // variable to store input element
+  // console.log(todayIs);
+
+  // variable to store input elements   d
   const commentElement = document.querySelector("textarea");
   const nameElement = document.querySelector("input");
 
   // variable to store users input
   const comment = commentElement.value;
   const name = nameElement.value;
-  console.log(nameElement.value)
+  // console.log(nameElement.value)
  
   // check these elements are not empty strings 
   if (comment && name) {
@@ -44,7 +47,7 @@ const commentForm = document.querySelector("form");
 
   //  create picture item element 
     const picArea = document.createElement("div")
-   // create a p to hold the users tasks
+   // create a p to hold the users tasks 
     const paragraph = document.createElement("p")
      paragraph.textContent = comment
     const nameForm = document.createElement("p")
@@ -62,12 +65,14 @@ const commentForm = document.querySelector("form");
       // append this to the comment section of my blog 
     document.querySelector(".new-comments").appendChild(picArea);
     document.querySelector(".new-comments").appendChild(nameArea);
-    document.querySelector(".new-comments").appendChild(commentArea);
+    document.querySelector(".new-comments").appendChild(nameArea);
  
   } else {
     alert("Please put in a comment! :)")
   }
-})
+});
+}
+
 
 // Image Carousel 
 const nextButton = document.querySelector(".right-arrow");
@@ -76,7 +81,6 @@ const track = document.querySelector(".img-car")
 const slides = Array.from(track.children);
 const circleNav = document.querySelector(".carousel-tracker");
 const circle = Array.from(circleNav.children);
-
 // add event listener for the arrows on click             
 // move images right when i click arrow
 //  change class name of Icon when active and inactive
@@ -86,6 +90,7 @@ nextButton.addEventListener("click", e => {
   currentSlide.classList.remove("active");
   currentCircle.classList.remove("fas");
   currentCircle.classList.add("far");
+  console.log(nextButton);
 
   let nextSlide = currentSlide.nextElementSibling;
   let nextCircle = currentCircle.nextElementSibling;
@@ -95,8 +100,7 @@ nextButton.addEventListener("click", e => {
   }  nextSlide.classList.add("active");
     nextCircle.classList.add("fas");
     nextCircle.classList.remove("far");
-    console.log(nextSlide, nextCircle);
-})
+});
 
 prevButton.addEventListener("click", e => {
   const currentSlide = track.querySelector(".active");
@@ -114,5 +118,4 @@ prevButton.addEventListener("click", e => {
   }  prevSlide.classList.add("active");
     prevCircle.classList.add("fas");
     prevCircle.classList.remove("far");
-})
-
+});

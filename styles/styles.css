@@ -427,6 +427,7 @@ i {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  padding-left: 0;
 }
 
 .gallery .car-slide {

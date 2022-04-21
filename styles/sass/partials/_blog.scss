@@ -12,6 +12,13 @@
     padding-top: 1.5em;
   }
 }
+.blog-post {
+  h3{
+    color: white;
+    margin-left: .8em;
+
+  }
+}
 .two-col {
   display: flex;
   justify-content: space-between;
@@ -64,7 +71,7 @@
     }
     .blog-post {
       margin-top: -17em;
-      p {
+      p, {
         margin-left: 1.4em;
       }
       p:nth-last-of-type(1) {

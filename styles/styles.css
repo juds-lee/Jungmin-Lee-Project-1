@@ -135,6 +135,10 @@ header .header-img {
   width: 55%;
 }
 
+header .header-img button {
+  color: #0c1423;
+}
+
 header h1 {
   width: 42%;
   margin-bottom: 0;
@@ -1235,10 +1239,10 @@ i {
     visibility: hidden;
   }
   header h1 {
-    width: 100%;
     padding-top: 2em;
     font-size: 50px;
     margin: 0 auto;
+    text-align: center;
   }
   header .menu-btn {
     display: block;
@@ -1387,26 +1391,6 @@ i {
   .contact-form .form-name,
   .contact-form .form-email {
     margin: 1em 0;
-  }
-  .blog-post {
-    margin-top: -17em;
-  }
-  .blog-post p {
-    margin-left: 1.4em;
-    font-size: 15px;
-    line-height: 1.5em;
-  }
-  .blog-post p:nth-last-of-type(1) {
-    padding-bottom: 3em;
-    line-height: 1.5em;
-  }
-  .comments-section p {
-    margin-left: 1em;
-    font-size: 15px;
-    line-height: 1.5em;
-  }
-  .comments-section img {
-    margin-top: 2em;
   }
   .blog-post {
     margin-top: -17em;

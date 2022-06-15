@@ -495,6 +495,10 @@ i {
   height: 60vh;
 }
 
+body {
+  position: relative;
+}
+
 .contact-head h2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,18 +573,11 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
+  position: absolute;
   background-color: #0f614e;
-  bottom: 11em;
-  right: -10em;
+  bottom: 5em;
+  right: 0;
   margin: 0 2em;
-}
-
-.contactForm .positioning {
-  top: -250px;
-  right: -240px;
 }
 
 .contactForm .email-name {
@@ -777,6 +774,10 @@ i {
   -webkit-box-shadow: -27px 27px #86e0f9;
           box-shadow: -27px 27px #86e0f9;
   width: 113%;
+}
+
+.two-col .col-right h3 {
+  color: white;
 }
 
 .two-col .col-right .blog-post {

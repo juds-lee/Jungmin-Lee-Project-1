@@ -497,6 +497,7 @@ i {
 
 body {
   position: relative;
+  height: 100vh;
 }
 
 .contact-head h2 {
@@ -511,7 +512,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 2.5em;
+  padding-top: 1em;
   padding-left: 3em;
 }
 
@@ -563,6 +564,7 @@ body {
 }
 
 .contactForm {
+  display: nonw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,7 +577,7 @@ body {
           align-items: center;
   position: absolute;
   background-color: #0f614e;
-  bottom: 5em;
+  top: 21rem;
   right: 0;
   margin: 0 2em;
 }
@@ -889,14 +891,6 @@ body {
   }
   .two-col .blog-right-shadow {
     display: none;
-  }
-}
-
-@media (max-width: 1342px) {
-  .contactForm {
-    bottom: 11em;
-    right: -8em;
-    margin: 0 2em;
   }
 }
 
